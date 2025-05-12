@@ -1,0 +1,28 @@
+.footer-container {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.animated-footer-logo {
+    width: 20%;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

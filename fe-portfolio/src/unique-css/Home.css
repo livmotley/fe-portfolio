@@ -1,0 +1,46 @@
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-container {
+    position: relative;
+    padding: 20px;
+    width: fit-content;
+}
+
+.home-logo-overlay {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 300px;
+}
+
+.home-name {
+    position: relative;
+    z-index: 1;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 800%;
+    color: #C6422B;
+    line-height: 80%;
+}
+
+.homepage-logo {
+    width: 100%;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,28 @@
+.navbar-container {
+    display: flex;
+    gap: 28px;
+    position: fixed;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.177);
+    z-index: 1000;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-item {
+    font-weight: 500;
+    font-size: 13px;
+    color: #C6422B;
+}
+
+.navbar-item:hover {
+    color: black;
+}
