@@ -13,12 +13,6 @@ export function getProjectByTitle(title) {
     return portfolioAPI.get(`/projects/${title}`);
 };
 
-export function postMessage(name, body, email) {
-    const request = {
-        "name": name,
-        "body": body,
-        "email": email
-    };
-
+export function postMessage(request) {
     return portfolioAPI.post(`/messages`, request);
 };
