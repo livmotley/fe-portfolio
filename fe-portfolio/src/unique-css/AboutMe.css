@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -177,12 +177,56 @@
     }
 }
 
-@media only screen and (max-width: 590px) and (min-width: 400px) {
+@media only screen and (max-width: 590px) and (min-width: 431px) {
     .description-container {
         margin-right: 50px;
     }
 
     .page-description {
         padding-left: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .about-me-assets {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .image-collage {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-picture {
+        position: absolute;
+        width: 50%;
+        margin-left: 0px;
+        left: 60px;
+    }
+
+    .about-me-overlay {
+        position: relative;
+        left: 80px;
+        bottom: 5px;
+        width: 204px;
+    }
+
+    .static-flower {
+        margin: 0px;
+        bottom: 50px;
+        width: 100%;
+    }
+
+    .description-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .page-description {
+        text-align: justify;
     }
 }

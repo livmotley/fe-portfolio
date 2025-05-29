@@ -5,15 +5,16 @@ html, body, #root {
   padding: 0;
   height: 100%;
   width: 100%;
+  background-image: url("../src/assets/background-long.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  background-image: url("../src/assets/blue-grid-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  min-height: 100vh;
 }
 
 .app-wrapper {

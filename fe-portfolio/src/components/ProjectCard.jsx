@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import '../unique-css/Projects.css';
-import ncNewsTile from "../assets/projects/tiles/ncnews-tile.png";
-import pedaloutTile from "../assets/projects/tiles/pedalout-tile.png";
 
 function ProjectCard({ project, setIsHovered, setCardHovered }) {
     const [isHidden, setIsHidden] = useState(true);
