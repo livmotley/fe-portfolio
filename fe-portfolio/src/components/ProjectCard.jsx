@@ -28,8 +28,7 @@ function ProjectCard({ project, setIsHovered, setCardHovered }) {
             <div className="project-card-inner">
                 <Link to={`/projects/${project.title}`}>
                 <div className="project-image-container" >
-                    { project.title === "Pedal Out" ? <img src={pedaloutTile} alt={project.title} className="project-image"/> : null }
-                    { project.title === "NC News" ? <img src={ncNewsTile} alt={project.title} className="project-image"/> : null }
+                    <img src={project.assets[0]} alt={project.title} className="project-image"/>
                     <div className="project-overlay">
                         <span className="view-project">{project.title}</span>
                     </div>

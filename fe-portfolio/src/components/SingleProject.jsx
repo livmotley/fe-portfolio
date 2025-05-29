@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router";
 import { getProjectByTitle } from "../api";
 import { useEffect, useState } from "react";
 import "../unique-css/Single-Project.css";
+import ImageCarousel from "./ImageCarousel";
 
 function SingleProject() {
     const { title } = useParams();
@@ -14,7 +15,6 @@ function SingleProject() {
                 setIsError(false);
                 getProjectByTitle(title)
                 .then((response) => {
-                    // console.log(response.data.project)
                     setProject(response.data.project);
                     setIsLoading(false);
                 })
@@ -31,21 +31,20 @@ function SingleProject() {
     if(isError) return <p className="error-container">Sorry! Error loading the project. Please refresh.</p>
     if (!project) return <p className="error-container">Project not found</p >;
 
-    const techStackExample = ['JavaScript', 'TypeScript', 'Node.js', 'MongoDB', 'Postgres', 'Netlify', 'Render', 'SupabaseAuth', 'React Native']
-
+console.log(project);
     return (
         <div className="single-project-container">
             <div className="project-header">
                 <h2 className="page-title">{project.title}</h2>
                 <div className="tech-stack-container">
-                    {techStackExample.map((tech) => {
+                    {project.tech_stack.map((tech) => {
                         return <p key={tech} className="tech-name">{tech}</p>
                     })}
                 </div>
             </div>
             <div className="project-content">
                 <div className="project-assets">
-                    
+                    <ImageCarousel images={project.assets}/>
                 </div>
                 <div className="project-details">
                     <p className="page-description">{project.description}</p>
