@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { getAllProjects } from "../api";
 import '../unique-css/Projects.css';
-import '../unique-css/Page.css';
 
 
 function Projects() {
@@ -36,7 +35,7 @@ function Projects() {
         <div className="projects-container">
             <div className="projects-header">
                 <h2 className="page-title">PROJECTS</h2>
-                <p className="page-description">Take a look through some projects that I've worked <br/>on below and click through for more details. Enjoy!</p>
+                <p className="project-description">Take a look through some projects that I've worked on below and click through for more details. Enjoy!</p>
             </div>
             <div className="projects-grid">
                 {projects.map((project) => {

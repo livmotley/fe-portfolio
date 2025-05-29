@@ -13,7 +13,7 @@
 .projects-header {
     width: 100%;
     text-align: center;
-    margin-bottom: 3rem;
+    padding-bottom: 1rem;
     padding-top: 1rem;
 }
 
@@ -26,6 +26,20 @@
     margin-bottom: 8px;
     text-align: right;
     margin-right: 50px;
+}
+
+.project-description {
+    width: 80%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: #3a4857;
+    max-width: 800px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding-left: 20px; */
+    text-align: center;
+    justify-self: center;
 }
 
 .projects-grid {
@@ -143,6 +157,12 @@
     }
 }
 
+@media (max-width: 870px) {
+    .project-description {
+        text-align: left;
+    }
+}
+
 @media (max-width: 560px) {
     .projects-container {
         padding: 0 1rem;
@@ -155,7 +175,7 @@
     }
     
     .projects-header {
-        margin-bottom: 2rem;
+        padding-bottom: 1rem;
     }
     
     .page-title {
