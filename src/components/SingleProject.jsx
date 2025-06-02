@@ -56,10 +56,10 @@ function SingleProject() {
                     <p className="project-description">{project.description}</p>
                     {project.github_link_two ? (
                         <div className="github-links-container">
-                            <Link to={project.github_link_one} className="github-link">GitHub Link: BE</Link>
-                            <Link to={project.github_link_two} className="github-link">GitHub Link: FE</Link>
+                            <Link to={project.github_link_one} className="github-link" target="_blank">GitHub Link: BE</Link>
+                            <Link to={project.github_link_two} className="github-link" target="_blank">GitHub Link: FE</Link>
                         </div> ) : (
-                            <Link to={project.github_link_one} className="github-link">GitHub Link</Link>)}
+                            <Link to={project.github_link_one} className="github-link" target="_blank">GitHub Link</Link>)}
                 </div>
             </div>
         </div>
