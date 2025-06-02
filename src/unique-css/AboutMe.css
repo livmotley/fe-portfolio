@@ -280,6 +280,14 @@
 }
 
 @media (max-width: 430px) {
+    .button-container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
     .about-me-assets {
         display: flex;
         flex-direction: column;
@@ -319,6 +327,6 @@
     }
 
     .page-description {
-        text-align: justify;
+        text-align: left;
     }
 }
