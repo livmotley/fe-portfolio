@@ -103,7 +103,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
-    text-align: justify;
+    text-align: left;
     line-height: 1.5;
 }
 
@@ -236,6 +236,10 @@ button.indicator {
 }
 
 @media (max-width: 430px) {
+    .single-project-container {
+        padding: 0 0.5rem;
+    }
+    
     .carousel {
         margin: 0 auto;
     }
@@ -246,6 +250,14 @@ button.indicator {
 
     .project-details {
         margin-bottom: 80px;
+    }
+
+    .project-description {
+        text-align: left;
+        max-width: 80%;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .title-section {
