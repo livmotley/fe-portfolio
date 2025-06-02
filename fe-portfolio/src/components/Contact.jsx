@@ -1,6 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import "../unique-css/Contact.css";
 import { postMessage } from "../api";
+import githubIcon from "../assets/github-icon.png";
+import linkedinIcon from "../assets/linkedin-icon.png";
+
 
 function Contact() {
     const [messageInput, setMessageInput] = useState({ name: "", body: "", email: "" });
@@ -79,6 +83,16 @@ function Contact() {
                         className="submit-button"
                         type="submit">send message</button>
                 </form>
+            </div>
+            <div className="social-container">
+                <Link to="https://github.com/livmotley" className="social-link" target="_blank">
+                    <img src={githubIcon} alt="Liv Motley GitHub Icon" className="social-icon"/>
+                    <p className="social-text">View my GitHub</p>
+                </Link>
+                <Link to="https://www.linkedin.com/in/olivia-motley/" className="social-link" target="_blank">
+                    <img src={linkedinIcon} alt="Liv Motley LinkedIn Icon" className="social-icon"/>
+                    <p className="social-text">Connect on LinkedIn</p>
+                </Link>
             </div>
         </div>
     )

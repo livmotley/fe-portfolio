@@ -36,6 +36,15 @@
     gap: 10px;
 }
 
+.first-load-button {
+    background-color: #a1c4ea;
+    border: 2px solid transparent;
+    color: white;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: smaller;
+    letter-spacing: 0.02rem;
+}
+
 .about-me-button {
     background-color: transparent;
     border: 2px solid #a1c4ea;
@@ -177,13 +186,96 @@
     }
 }
 
+@media only screen and (max-width: 900px) and (min-width: 591px) {
+    .page-description {
+        padding-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 691px) and (min-width: 591px) {
+    .page-description {
+        padding-left: 15%;
+    }
+
+    .profile-picture {
+        width: 30%;
+        max-width: 250px;
+    }
+
+    .about-me-overlay {
+        position: absolute;
+    }
+
+    .static-flower {
+        margin-top: 160px;
+        margin-left: 120px;
+        width: 60%;
+        max-width: 160px;
+        position: sticky;
+    }
+}
+
+@media only screen and (max-width: 810px) and (min-width: 741px) {
+    .page-description {
+        padding-left: 15%;
+    }
+
+    .profile-picture {
+        width: 30%;
+        max-width: 250px;
+    }
+
+    .about-me-overlay {
+        position: absolute;
+    }
+
+    .static-flower {
+        margin-top: 180px;
+        margin-left: 145px;
+        width: 60%;
+        max-width: 160px;
+        position: sticky;
+    }
+}
+
+@media only screen and (max-width: 740px) and (min-width: 690px) {
+    .page-description {
+        padding-left: 15%;
+    }
+
+    .profile-picture {
+        width: 30%;
+        max-width: 250px;
+    }
+
+    .about-me-overlay {
+        position: absolute;
+    }
+
+    .static-flower {
+        margin-top: 180px;
+        margin-left: 140px;
+        width: 60%;
+        max-width: 160px;
+        position: sticky;
+    }
+}
+
 @media only screen and (max-width: 590px) and (min-width: 431px) {
     .description-container {
         margin-right: 50px;
     }
 
     .page-description {
-        padding-left: 20px;
+        padding-left: 15%;
+    }
+
+    .static-flower {
+        margin-top: 160px;
+        margin-left: 130px;
+        width: 60%;
+        max-width: 160px;
+        position: sticky;
     }
 }
 
