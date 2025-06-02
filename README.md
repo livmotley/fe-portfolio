@@ -1,5 +1,5 @@
 # My Portfolio
-A portfolio built to show the projects and applications I've built in one place, including the portfolio itself. View my portfolio [here]()
+A portfolio built to show the projects and applications I've built in one place, including the portfolio itself. View my portfolio [here](https://livmotley-portfolio.netlify.app/) ⭐️
 
 ## Tech Stack
 - JavaScript
