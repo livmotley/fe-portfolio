@@ -35,7 +35,7 @@ function Projects() {
         <div className="projects-container">
             <div className="projects-header">
                 <h2 className="page-title">PROJECTS</h2>
-                <p className="project-description">Take a look through some projects that I've worked on below and click through for more details. Enjoy!</p>
+                <p className="project-page-description">Take a look through some projects that I've worked on below and click through for more details. Enjoy!</p>
             </div>
             <div className="projects-grid">
                 {projects.map((project) => {
