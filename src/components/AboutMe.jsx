@@ -69,8 +69,8 @@ function AboutMe() {
             <p className="page-description">
               My career has been a blend of creativity, strategy, and
               increasingly, technology. From earlier in my career as an intern
-              at Plum Fintech to building Go-To-Market strategies at TikTok,
-              I've always found myself at the intersection of marketing and
+              at Plum Fintech to building go-to-market strategies at TikTok,
+              I've frequently found myself at the intersection of marketing and
               product development. Working directly with UX/UI teams, building
               feedback loops for product iteration, and collaborating with
               engineering teams taught me about the developer mindset, how
@@ -105,7 +105,7 @@ function AboutMe() {
               like to immerse myself in conversations that challenge
               conventional thinking around technology, as well as stay on top of
               the latest trends and emerging tech ventures. My curiosity is what
-              has driven me to be a software developer – to be a part of the
+              has driven me to become a software developer – to be a part of the
               conversation I’m already invested in and drive positive change
               through technology.
             </p>
