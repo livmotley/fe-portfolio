@@ -7,6 +7,7 @@ import SingleProject from './components/SingleProject';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MessageFailure from './components/MessageFailure';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/projects/:title" element={<SingleProject/>} />
           <Route path="/aboutme" element={<AboutMe/>} />
           <Route path="/getintouch" element={<Contact/>} />
+          <Route path="/getintouch/error" element = {<MessageFailure />} />
         </Routes>
       </main>
       <Footer />

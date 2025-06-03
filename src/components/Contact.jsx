@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import "../unique-css/Contact.css";
 import { postMessage } from "../api";
 import githubIcon from "../assets/github-icon.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
+import MessageFailure from "./MessageFailure";
 
 
 function Contact() {
@@ -11,12 +12,23 @@ function Contact() {
     const [hasSent, setHasSent] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
+    const [emailError, setEmailError] = useState(false);
+    const navigate = useNavigate();
     
     function handleSubmit(event) {
         event.preventDefault();
         setHasSent(false);
         setIsLoading(true);
         setIsError(false);
+
+        const { email } = messageInput;
+        const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        if(!emailRegex.test(email)) {
+            setEmailError(true);
+            setIsLoading(false);
+            return;
+        }
+
         postMessage(messageInput)
         .then((response) => {
             setMessageInput({ name: "", body: "", email: "" });
@@ -25,6 +37,7 @@ function Contact() {
             setTimeout(() => setHasSent(false), 3000);
         })
         .catch(() => {
+            navigate('/getintouch/error');
             setIsLoading(false);
             setIsError(true);
             setHasSent(false);
@@ -36,12 +49,14 @@ function Contact() {
     }
 
     if(isLoading) return <p className="loading-container">Thank you! Your message is sending...</p>
-    if(isError) return <p className="error-container">Message failed to send, please try again or click the button <br/>on the page to send a direct email instead.</p>
+    if(isError) return <MessageFailure />
+
 
     return (
         <div className="contact-page-container">
             <section className="page-header">
                 <h2 className="page-title">GET IN TOUCH</h2>
+                
                 <div className="instructions-container">
                     <button className="email-button">send an email</button>
                     <p className="instruction-text">or fill in the form below and I'll get back to you as soon as possible.</p>
@@ -84,6 +99,7 @@ function Contact() {
                         type="submit">send message</button>
                 </form>
             </div>
+            { emailError ? <p className="email-text">Incorrect email format. Please check.</p> : null }
             <div className="social-container">
                 <Link to="https://github.com/livmotley" className="social-link" target="_blank">
                     <img src={githubIcon} alt="Liv Motley GitHub Icon" className="social-icon"/>
