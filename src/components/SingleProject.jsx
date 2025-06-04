@@ -60,6 +60,9 @@ function SingleProject() {
                             <Link to={project.github_link_two} className="github-link" target="_blank">GitHub Link: FE</Link>
                         </div> ) : (
                             <Link to={project.github_link_one} className="github-link" target="_blank">GitHub Link</Link>)}
+                        <div className="live-link-container">
+                            {project.hosted_site ? <Link to={project.hosted_site} className="live-link" target="_blank">Live Project Link</Link>: null }
+                        </div>
                 </div>
             </div>
         </div>

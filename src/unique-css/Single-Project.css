@@ -94,6 +94,31 @@
     border: 2px solid transparent;
 }
 
+.live-link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.live-link {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.02rem;
+    background-color: #C6422B;
+    border: 2px solid transparent;
+    padding: 4px 6px;
+    border-radius: 8px;
+    margin: 0px;
+}
+
+.live-link:hover {
+    color: white;
+    background-color: #a1c4ea;
+    border: 2px solid transparent;
+}
+
 .project-description {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
