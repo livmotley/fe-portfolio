@@ -233,6 +233,10 @@ button.indicator {
         justify-content: flex-start;
     }
 
+    .live-link-container {
+        justify-content: flex-start;
+    }
+
 }
 
 @media only screen and (max-width: 1160px) and (min-width: 431px) {
