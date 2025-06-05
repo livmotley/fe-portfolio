@@ -119,6 +119,38 @@
     line-height: 1.5;
 }
 
+@media only screen and (min-width: 1726px) {
+    .about-me-assets {
+        margin: 0 auto;
+    }
+    .profile-picture {
+        width: 20%;
+    }
+
+    .static-flower {
+        margin-left: 200px;
+        margin-top: 280px;
+    }
+
+    .page-description {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1725px) and (min-width: 1601px) {
+    .about-me-assets {
+        margin: 0 auto;
+    }
+    .profile-picture {
+        width: 20%;
+    }
+
+    .static-flower {
+        margin-left: 180px;
+        margin-top: 250px;
+    }
+}
+
 @media only screen and (max-width: 1600px) and (min-width: 1181px) {
     .about-me-assets {
         width: 70%;

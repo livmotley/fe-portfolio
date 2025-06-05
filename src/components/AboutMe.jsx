@@ -27,7 +27,7 @@ function AboutMe() {
             className={initialLoad ? "first-load-button" : "about-me-button"}
             onClick={() => handleButtonClick(1)}
           >
-            who am i?
+            who am I?
           </button>
           <button
             className="about-me-button"
@@ -57,7 +57,7 @@ function AboutMe() {
               building meaningful digital experiences. After five years in
               marketing and influencer management at companies like TikTok and
               SocialChain, I decided to switch careers into software
-              development. I bring a creative eye for design, a deep
+              development. <br/><br/>I bring a creative eye for design, a deep
               understanding of user experience, and a collaborative nature that
               comes from years of working with cross-functional teams. Now, as a
               developer, I'm channelling these skills into building robust
@@ -74,7 +74,7 @@ function AboutMe() {
               product development. Working directly with UX/UI teams, building
               feedback loops for product iteration, and collaborating with
               engineering teams taught me about the developer mindset, how
-              developers work and how to collaborate with them successfully. I
+              developers work and how to collaborate with them successfully. <br/><br/>I
               expanded my fascination of technology by specialising in the realm
               of blockchain, decentralisation and NFTs for my master’s thesis at
               the University of Edinburgh. Throughout the years, outside of my
@@ -83,7 +83,7 @@ function AboutMe() {
               a 3-month bootcamp with Northcoders in Software Development. As a
               result, I now possess the key technical skills to build full-stack
               applications across a varied tech stack and understand the
-              developer mindset even more so. This, in conjunction with my
+              developer mindset even more so. <br/><br/>This, in conjunction with my
               previous professional experience means I hold a unique position
               where I understand product development from the perspective of
               both the developer and a customer/client-focused marketer. This
@@ -101,7 +101,7 @@ function AboutMe() {
               blockchain present. Even more so, I’m keen to explore how such
               technologies can be harnessed to improve the lifestyles of
               less-developed nations and aid innovation for a more sustainable
-              future. Technology, particularly now, can be a polarizing topic. I
+              future. <br/><br/>Technology, particularly now, can be a polarizing topic. I
               like to immerse myself in conversations that challenge
               conventional thinking around technology, as well as stay on top of
               the latest trends and emerging tech ventures. My curiosity is what
